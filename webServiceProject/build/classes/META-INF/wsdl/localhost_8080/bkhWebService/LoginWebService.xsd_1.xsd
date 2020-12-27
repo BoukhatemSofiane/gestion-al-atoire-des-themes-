@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://projetServiceWeb.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://projetServiceWeb.com/">
+
+<xs:element name="ajtEtud" type="tns:ajtEtud"/>
+
+<xs:element name="ajtEtudResponse" type="tns:ajtEtudResponse"/>
+
+<xs:element name="excutetequery" type="tns:excutetequery"/>
+
+<xs:element name="excutetequeryResponse" type="tns:excutetequeryResponse"/>
+
+<xs:element name="getThecoordonne" type="tns:getThecoordonne"/>
+
+<xs:element name="getThecoordonneResponse" type="tns:getThecoordonneResponse"/>
+
+<xs:element name="gettheRightQuery" type="tns:gettheRightQuery"/>
+
+<xs:element name="gettheRightQueryResponse" type="tns:gettheRightQueryResponse"/>
+
+<xs:element name="supEtud" type="tns:supEtud"/>
+
+<xs:element name="supEtudResponse" type="tns:supEtudResponse"/>
+
+<xs:element name="theQuery" type="tns:theQuery"/>
+
+<xs:element name="theQueryResponse" type="tns:theQueryResponse"/>
+
+<xs:element name="updatequery" type="tns:updatequery"/>
+
+<xs:element name="updatequeryResponse" type="tns:updatequeryResponse"/>
+
+<xs:complexType name="gettheRightQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gettheRightQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getThecoordonne">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getThecoordonneResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="excutetequery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+<xs:element name="attribut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="excutetequeryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="supEtud">
+<xs:sequence>
+<xs:element name="selectedTheme" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="supEtudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatequery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatequeryResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="theQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+<xs:element name="typeuser" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="theQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ajtEtud">
+<xs:sequence>
+<xs:element name="nomEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="prenomEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="emailEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="numTeleEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="mdpEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="addresEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="DateEtud" type="xs:string" minOccurs="0"/>
+<xs:element name="path" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ajtEtudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

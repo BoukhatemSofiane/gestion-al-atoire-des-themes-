@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.suivantAddProfAdmineViewController">
+   <children>
+      <ImageView fx:id="ProfPhoto" fitHeight="90.0" fitWidth="106.0" layoutX="426.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imag/Contacts_52px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="addresProf" focusColor="#2196f3" labelFloat="true" layoutX="209.0" layoutY="206.0" prefHeight="25.0" prefWidth="322.0" promptText="Address" />
+      <JFXTextField fx:id="numTeleProf" focusColor="#2196f3" labelFloat="true" layoutX="209.0" layoutY="298.0" prefHeight="25.0" prefWidth="322.0" promptText="numéro de téléphone" />
+      <JFXButton fx:id="suivantAddProfAdmineBtn" layoutX="408.0" layoutY="419.0" onAction="#confirmerAddProfActionAdmine" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Confirmer" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="209.0" layoutY="105.0" onAction="#choisirPhotoProf" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Choisir une photo" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="valid" layoutX="232.0" layoutY="419.0" onAction="#validerAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Validé" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

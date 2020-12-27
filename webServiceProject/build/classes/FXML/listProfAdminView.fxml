@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.listProfAdminViewController">
+   <children>
+      <JFXListView fx:id="listOfProf" layoutX="36.0" layoutY="73.0" prefHeight="319.0" prefWidth="687.0" />
+      <Label layoutX="67.0" layoutY="39.0" prefHeight="34.0" prefWidth="205.0" text="Liste des enseignants:" textFill="#6f6464">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="modifiebtn" disable="true" layoutX="84.0" layoutY="422.0" onAction="#modifieProfAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Modifie" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="327.0" layoutY="422.0" onAction="#addProfAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Ajouter" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="supprimrtbtn" disable="true" layoutX="568.0" layoutY="422.0" onAction="#supprimerProfAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Supprimer" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

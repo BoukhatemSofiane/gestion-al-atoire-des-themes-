@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="121.0" prefWidth="138.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminBtnControllController">
+   <children>
+      <JFXButton layoutX="4.0" layoutY="32.0" onAction="#AjouterThemeAdmineAction" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2; -fx-border-width: 0.5px;" text="Ajouter Theme" textFill="#ddd2d2" />
+      <JFXButton layoutX="4.0" layoutY="1.0" onAction="#homeAdmineAction" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2; -fx-border-width: 0.5px;" text="Home" textFill="#ddd2d2" />
+      <JFXButton layoutX="4.0" layoutY="63.0" onAction="#AjouterProfAdminAction" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2; -fx-border-width: 0.5px;" text="Ajouter Enseignant" textFill="#ddd2d2" />
+      <JFXButton layoutX="4.0" layoutY="94.0" onAction="#AjouterEtudiantAdmineAction" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2; -fx-border-width: 0.5px;" text="Ajouter Etudiant" textFill="#ddd2d2" />
+   </children>
+</AnchorPane>

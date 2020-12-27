@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.listOfThemeController">
+   <children>
+      <JFXListView fx:id="themelist" layoutX="26.0" layoutY="99.0" prefHeight="297.0" prefWidth="687.0" />
+      <Label alignment="CENTER" layoutX="296.0" layoutY="68.0" prefHeight="31.0" prefWidth="147.0" text="La liste des themes" textFill="#797676">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="votreChoix" layoutX="121.0" layoutY="400.0" prefHeight="31.0" prefWidth="573.0" textFill="#797676">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="confirmer" disable="true" layoutX="538.0" layoutY="437.0" onAction="#ConfirmerVotreChoix" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #2196f3; -fx-background-radius: 50px;" text="Confirmer" textFill="#06070d" />
+      <Label fx:id="votreChoix1" layoutX="46.0" layoutY="400.0" prefHeight="31.0" prefWidth="74.0" text="Votre Choix :" textFill="#797676">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="26.0" layoutY="14.0" prefHeight="55.0" prefWidth="687.0">
+         <children>
+            <Label layoutX="112.0" layoutY="15.0" text="Days" textFill="#797676">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Text fx:id="daysTimer" fill="#244949" layoutX="58.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="hoursTimer" fill="#244949" layoutX="199.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="minutesTimer" fill="#244949" layoutX="341.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="secondsTimer" fill="#244949" layoutX="491.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <Label layoutX="250.0" layoutY="15.0" text="Hours" textFill="#797676">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="397.0" layoutY="15.0" text="Minutes" textFill="#797676">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="15.0" text="Seconds" textFill="#797676">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

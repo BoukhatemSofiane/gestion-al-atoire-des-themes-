@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.periodeAdminViewController">
+   <children>
+      <JFXComboBox fx:id="hoursInput"  layoutX="386.0" layoutY="140.0" prefHeight="25.0" prefWidth="178.0" />
+      <JFXComboBox fx:id="minutesInput"  layoutX="386.0" layoutY="245.0" prefHeight="25.0" prefWidth="178.0" />
+      <JFXComboBox fx:id="secondsInput"  layoutX="386.0" layoutY="350.0" prefHeight="25.0" prefWidth="178.0" />
+      <JFXComboBox fx:id="daysInput"  layoutX="386.0" layoutY="34.0" prefHeight="25.0" prefWidth="178.0" />
+      <JFXButton layoutX="316.0" layoutY="434.0" onAction="#startAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Start" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="166.0" layoutY="51.0" text="Days" />
+      <Label layoutX="163.0" layoutY="157.0" text="Hours" />
+      <Label layoutX="158.0" layoutY="262.0" text="Minutes" />
+      <Label layoutX="157.0" layoutY="363.0" text="Seconds" />
+      <Separator layoutX="128.0" layoutY="104.0" prefHeight="17.0" prefWidth="482.0" />
+      <Separator layoutX="128.0" layoutY="207.0" prefHeight="17.0" prefWidth="482.0" />
+      <Separator layoutX="128.0" layoutY="312.0" prefHeight="17.0" prefWidth="482.0" />
+      <Separator layoutX="128.0" layoutY="402.0" prefHeight="17.0" prefWidth="482.0" />
+   </children>
+</AnchorPane>

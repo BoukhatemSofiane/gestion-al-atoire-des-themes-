@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd0">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data" />
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd1">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data.serialization"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd2">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data.ssi.integracaomoebius.core.model"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>    
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd3">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data.ssi.moebiuscore.core.model"/>
+            <jxb:nameXmlTransform>
+                <jxb:typeName suffix="Type" /> 
+                <jxb:elementName suffix="Element"/> 
+            </jxb:nameXmlTransform>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd4">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data.serialization.arrays"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="http://homologamoebius.sondaprocwork.com.br/V5/IntegracaoMoebius/MoebiusIntegration.svc?xsd=xsd5">
+        <jxb:schemaBindings>
+            <jxb:package name="moebius.data.ssi.core.model"/>
+        </jxb:schemaBindings>
+        <jxb:bindings node="//xs:complexType[@name='PersistentObjectOfInt']">
+            <jxb:class name="PersistentObjectOfInt2" />
+        </jxb:bindings>
+        <jxb:bindings node="//xs:complexType[@name='PersistentObjectOfString']">
+            <jxb:class name="PersistentObjectOfString2" />
+        </jxb:bindings>
+    </jxb:bindings>
+</jxb:bindings>

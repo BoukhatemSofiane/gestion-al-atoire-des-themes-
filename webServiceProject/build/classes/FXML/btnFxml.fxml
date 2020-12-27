@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="121.0" prefWidth="138.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.btnFxmlController">
+   <children>
+      <JFXButton layoutX="5.0" layoutY="66.0" onAction="#getMesMoyennes" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2;" text="Mes Moyennes" textFill="#ddd2d2" />
+      <JFXButton layoutX="5.0" layoutY="18.0" onAction="#homebtn" prefHeight="27.0" prefWidth="129.0" style="-fx-border-color: #ddd2d2;" text="Home" textFill="#ddd2d2" />
+   </children>
+</AnchorPane>

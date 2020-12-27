@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.moyenViewController">
+   <children>
+      <Label layoutX="71.0" layoutY="32.0" prefHeight="30.0" prefWidth="107.0" text="1 er semstre :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="149.0" prefHeight="30.0" prefWidth="107.0" text="2 eme semstre :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="263.0" prefHeight="30.0" prefWidth="107.0" text="3 eme semstre :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="395.0" prefHeight="30.0" prefWidth="118.0" text="Moyenne géneral :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="82.0" prefHeight="30.0" prefWidth="68.0" text="Moyenne :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenS1" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="82.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="198.0" prefHeight="30.0" prefWidth="68.0" text="Moyenne :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenS2" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="198.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="306.0" prefHeight="30.0" prefWidth="68.0" text="Moyenne :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenS3" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="306.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="82.0" prefHeight="30.0" prefWidth="208.0" text="Moyenne de l'unité fondamental:" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenUniteS1" alignment="CENTER" contentDisplay="CENTER" layoutX="571.0" layoutY="82.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="198.0" prefHeight="30.0" prefWidth="208.0" text="Moyenne de l'unité fondamental:" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenUniteS2" alignment="CENTER" contentDisplay="CENTER" layoutX="571.0" layoutY="198.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="306.0" prefHeight="30.0" prefWidth="208.0" text="Moyenne de l'unité fondamental:" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenUniteS3" alignment="CENTER" contentDisplay="CENTER" layoutX="571.0" layoutY="306.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="66.0" layoutY="125.0" prefHeight="12.0" prefWidth="584.0" />
+      <Separator layoutX="66.0" layoutY="241.0" prefHeight="12.0" prefWidth="584.0" />
+      <Separator layoutX="66.0" layoutY="347.0" prefHeight="12.0" prefWidth="584.0" />
+      <Label fx:id="idMoyenGeneral" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="395.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="395.0" prefHeight="30.0" prefWidth="208.0" text="Moyenne géneral des unités :" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idMoyenneGeneraldunite" alignment="CENTER" contentDisplay="CENTER" layoutX="571.0" layoutY="395.0" prefHeight="30.0" prefWidth="78.0" style="-fx-border-color: #000000;" textAlignment="CENTER" textFill="#756161">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

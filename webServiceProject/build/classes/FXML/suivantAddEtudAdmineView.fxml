@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.suivantAddEtudAdmineViewController">
+   <children>
+      <ImageView fx:id="EtudPhoto" fitHeight="90.0" fitWidth="106.0" layoutX="425.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imag/Contacts_52px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="addresEtud" focusColor="#2196f3" labelFloat="true" layoutX="208.0" layoutY="201.0" prefHeight="25.0" prefWidth="322.0" promptText="Address" />
+      <JFXTextField fx:id="numTeleEtud" focusColor="#2196f3" labelFloat="true" layoutX="208.0" layoutY="293.0" prefHeight="25.0" prefWidth="322.0" promptText="numéro de téléphone" />
+      <JFXButton fx:id="suivantAddEtudAdmineBtn" layoutX="407.0" layoutY="419.0" onAction="#suivantAddEtudActionAdmine" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Suivant" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="208.0" layoutY="100.0" onAction="#choisirPhotoEtud" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Choisir une photo" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="valid" layoutX="231.0" layoutY="419.0" onAction="#validerAction" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #2196f3; -fx-background-radius: 70px;" text="Validé" textFill="#06070d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
